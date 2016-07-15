@@ -6,43 +6,43 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>IQDropDownTextField.xcscheme</key>
+		<key>CCBottomRefreshControl.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-iOSProject.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>Pods-iOSProjectTests.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>PureLayout.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Reachability.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2740DD49902D768EA4BF13F06A688202</key>
+		<key>01EE6FA15D345E9BF9AEA1B465B58373</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,27 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7704BD0E8AF7B727D546E0ADC7869698</key>
+		<key>425B3EB900D82FC228BF31FB9D3CDB7C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>905DF06AD554358BBFE8DAB291818EB9</key>
+		<key>524C153D448AE5425394FBE9886F979D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9717D78B49FA66672FE5921D42824C47</key>
+		<key>5842E0902FFFFF0033B3004FF9561CC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97CF9DF3B92A8D1C054A4BAE5F69466B</key>
+		<key>5FA71655FDFDCF95DAEAFCB777F1F9F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EC5E922CC241E09220C649AE7708217E</key>
+		<key>A945169309CBD0BB4F17CA68EC82A360</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -9,6 +9,8 @@
 #import "CountryDetailModel.h"
 #import "ContryDetailCell.h"
 #import "CommonMethodHelper.h"
+#import "UIScrollView+BottomRefreshControl.h"
+
 
 @interface CountryDetailsViewController()<UITableViewDelegate,UITableViewDataSource>
 
@@ -17,6 +19,8 @@
 @property(nonatomic, strong) UILabel *lblNoRecords;
 
 @property(nonatomic, strong) NSMutableArray *countryDetailsArray;
+
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -104,6 +108,18 @@
     }
     return _lblNoRecords;
 }
+-(UIRefreshControl *)refreshControl{
+    
+    if (!_refreshControl) {
+        
+        _refreshControl = [UIRefreshControl new];
+        
+        _refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull up to reload!"];
+        _refreshControl.triggerVerticalOffset = 80;
+        [_refreshControl addTarget:self action:@selector(refreshBottom) forControlEvents:UIControlEventValueChanged];
+    }
+    return _refreshControl;
+}
 
  #pragma mark – View Life Cycle
 
@@ -113,9 +129,11 @@
 
     // Do any additional setup after loading the view.
      self.automaticallyAdjustsScrollViewInsets=NO;
+     self.tblCountryDetails.bottomRefreshControl = self.refreshControl;
 
      [self callGetCountryDetailsAPI];
- }
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
@@ -136,6 +154,19 @@
  }
 
  #pragma mark – Private Methods
+- (void)refreshBottom {
+    
+    double delayInSeconds = 0.4;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        
+        //Update offset and call API to load more records
+        
+        //TODO: Add line into the success/failure of calling API
+        [self.tblCountryDetails.bottomRefreshControl endRefreshing];
+
+    });
+}
 
 
 

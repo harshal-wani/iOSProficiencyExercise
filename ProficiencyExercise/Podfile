@@ -7,7 +7,8 @@ target 'iOSProject' do
     pod 'PureLayout', '~> 3.0'
     pod 'SDWebImage', '~> 3.7'
     pod 'Reachability', '~> 3.2'
-    pod 'IQDropDownTextField', '~> 1.0'
+    #    pod 'IQDropDownTextField', '~> 1.0'
+    pod 'CCBottomRefreshControl', '~> 0.5'
 
 end
 
