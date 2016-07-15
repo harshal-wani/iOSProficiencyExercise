@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iOSProject' do
+
+    pod 'AFNetworking', '~> 2.6'
+    pod 'PureLayout', '~> 3.0'
+    pod 'SDWebImage', '~> 3.7'
+    pod 'Reachability', '~> 3.2'
+    pod 'IQDropDownTextField', '~> 1.0'
+
+end
+
+target 'iOSProjectTests' do
+end

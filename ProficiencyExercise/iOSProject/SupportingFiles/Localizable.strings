@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  iOSProject
+*/
+
+//Common Strings
+"Alert" = "Alert";
+
+//Network Strings
+"The Internet connection appears to be offline." = "The Internet connection appears to be offline.";
+
+//Root View Controller
+"Country Details" = "Country Details";
+
+//Country Deails
+"No country details found." = "No country details found.";
