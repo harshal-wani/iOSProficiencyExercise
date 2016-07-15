@@ -38,4 +38,7 @@
 //Calculate points according to device size
 + (float)pointsToPixels:(float)points;
 
+
+//ImageView Creation
++ (UIImageView *)createImageView:(NSString *)imageName;
 @end

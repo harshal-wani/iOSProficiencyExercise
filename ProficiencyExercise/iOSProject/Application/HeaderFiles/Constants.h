@@ -11,7 +11,8 @@
 #define BLACK_HEX_000000                    @"000000"
 
 //Fonts
-#define HELVETICA_NEW_BOLD                  @"HelveticaNeue-Bold"
+#define HELVETICA_NEUE                  @"HelveticaNeue"
+#define HELVETICA_NEUE_BOLD                  @"HelveticaNeue-Bold"
 
 //Network
 #define COMMUNICATION_WITH_SERVER_FAILED    @"Communication with server failed"

@@ -152,4 +152,18 @@
                            alpha:1.0];
 }
 
+#pragma mark -  ImageView -
+
++ (UIImageView *)createImageView:(NSString *)imageName
+{
+    UIImageView *imageView = [[UIImageView alloc] initForAutoLayout];
+    
+    if ([StringValidateUtils isStringPresent:imageName])
+    {
+        [imageView setImage:[UIImage imageNamed:imageName]];
+    }
+    
+    return imageView;
+}
+
 @end

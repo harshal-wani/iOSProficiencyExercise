@@ -74,7 +74,7 @@
                                                    andTag:1
                                            andButtonTitle:NSLocalizedString(@"Country Details", nil)
                                               andFontSize:PTPX(16)
-                                              andFontType:HELVETICA_NEW_BOLD
+                                              andFontType:HELVETICA_NEUE_BOLD
                                           andFontColorHex:BLACK_HEX_000000
                                           andLeftCapWidth:0
                                          andLeftCapHeight:0];

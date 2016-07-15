@@ -5,6 +5,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "CommonFilesImport.h"
 
 @interface AppDelegate ()
 
@@ -47,18 +48,17 @@
 - (void)initialSetup
 {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window
-     setBackgroundColor:[UIColor grayColor]];
     
     self.rootViewController = [[RootViewController alloc]init];
     self.rootNavigationController = [[UINavigationController alloc]initWithRootViewController:self.rootViewController];
-//    [self.rootNavigationController
-//     setNavigationBarHidden:YES];
     
     [self.window
      setRootViewController:self.rootNavigationController];
     self.rootViewController.view.translatesAutoresizingMaskIntoConstraints = YES;
     
+    [self.window
+     setBackgroundColor:[UIUtils colorFromHexColor:WHITE_HEX_FFFFFF]];
+
     [self.window makeKeyAndVisible];
 }
 

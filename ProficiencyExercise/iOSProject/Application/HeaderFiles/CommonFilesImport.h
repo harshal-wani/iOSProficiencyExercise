@@ -2,7 +2,7 @@
 //  CommonFilesImport.h
 //  iOSProject
 //
-
+#import <UIImageView+WebCache.h>
 #import "Macros.h"
 #import "PureLayout.h"
 #import "MBProgressHUD.h"

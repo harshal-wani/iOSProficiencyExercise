@@ -25,6 +25,8 @@
 		5FA448FC1D38F83F00510BDB /* CountryDetailsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA448FB1D38F83F00510BDB /* CountryDetailsProxy.m */; };
 		5FA448FF1D392CA100510BDB /* CountryDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA448FE1D392CA100510BDB /* CountryDetailModel.m */; };
 		A5948AD93F8B93465F9CF0AD /* libPods-iOSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB649B47BAD895A33B6EC89 /* libPods-iOSProject.a */; };
+		F8DFE0CE1D396534002B039C /* ContryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DFE0CD1D396534002B039C /* ContryDetailCell.m */; settings = {ASSET_TAGS = (); }; };
+		F8DFE0D11D3965A7002B039C /* AbstractCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DFE0D01D3965A7002B039C /* AbstractCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		7C00677B06E2608C567D9222 /* Pods-iOSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProject/Pods-iOSProject.release.xcconfig"; sourceTree = "<group>"; };
 		91661093358AFDCC6CEAD89F /* Pods-iOSProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSProjectTests/Pods-iOSProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ECB649B47BAD895A33B6EC89 /* libPods-iOSProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DFE0CC1D396534002B039C /* ContryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContryDetailCell.h; sourceTree = "<group>"; };
+		F8DFE0CD1D396534002B039C /* ContryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContryDetailCell.m; sourceTree = "<group>"; };
+		F8DFE0CF1D3965A7002B039C /* AbstractCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractCell.h; sourceTree = "<group>"; };
+		F8DFE0D01D3965A7002B039C /* AbstractCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +282,10 @@
 		5FA448B71D389F9100510BDB /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				F8DFE0CF1D3965A7002B039C /* AbstractCell.h */,
+				F8DFE0D01D3965A7002B039C /* AbstractCell.m */,
+				F8DFE0CC1D396534002B039C /* ContryDetailCell.h */,
+				F8DFE0CD1D396534002B039C /* ContryDetailCell.m */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -635,12 +645,14 @@
 				5FA448FC1D38F83F00510BDB /* CountryDetailsProxy.m in Sources */,
 				5FA448D11D38A07C00510BDB /* main.m in Sources */,
 				5FA448D41D38A09000510BDB /* RootViewController.m in Sources */,
+				F8DFE0CE1D396534002B039C /* ContryDetailCell.m in Sources */,
 				5FA448F11D38E48F00510BDB /* CountryDetailsViewController.m in Sources */,
 				5FA448E81D38C46F00510BDB /* StringValidateUtils.m in Sources */,
 				5FA448DF1D38B99400510BDB /* NetworkUtils.m in Sources */,
 				5FA448DC1D38B8A700510BDB /* MBProgressHUD.m in Sources */,
 				5FA448E31D38BB7600510BDB /* UIUtils.m in Sources */,
 				5FA448D71D38B6A900510BDB /* AbstractViewController.m in Sources */,
+				F8DFE0D11D3965A7002B039C /* AbstractCell.m in Sources */,
 				5FA448C41D389FBF00510BDB /* AppDelegate.m in Sources */,
 				5FA448FF1D392CA100510BDB /* CountryDetailModel.m in Sources */,
 			);

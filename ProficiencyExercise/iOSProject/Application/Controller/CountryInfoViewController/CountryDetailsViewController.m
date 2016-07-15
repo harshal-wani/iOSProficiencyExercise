@@ -7,7 +7,7 @@
 #import "CommonFilesImport.h"
 #import "CountryDetailsProxy.h"
 #import "CountryDetailModel.h"
-
+#import "ContryDetailCell.h"
 
 @interface CountryDetailsViewController()<UITableViewDelegate,UITableViewDataSource>
 
@@ -79,8 +79,8 @@
     {
         _tblCountryDetails = [[UITableView alloc]initForAutoLayout];
         _tblCountryDetails.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-        [_tblCountryDetails registerClass:[UITableViewCell class]
-           forCellReuseIdentifier:@"Cell"];
+        [_tblCountryDetails registerClass:[ContryDetailCell class]
+           forCellReuseIdentifier:@"ContryDetailCell"];
         _tblCountryDetails.backgroundColor = [UIColor clearColor];
         _tblCountryDetails.dataSource = self;
         _tblCountryDetails.delegate = self;
@@ -97,7 +97,7 @@
         _lblNoRecords = [UIUtils createLabelWithText:NSLocalizedString(@"No country details found.", nil)
                                              withTextColorHex:BLACK_HEX_000000
                                             withTextAlignment:NSTextAlignmentCenter
-                                                     withFont:HELVETICA_NEW_BOLD
+                                                     withFont:HELVETICA_NEUE_BOLD
                                                   andFontSize:PTPX(10)];
         [_lblNoRecords setLineBreakMode:NSLineBreakByWordWrapping];
     }
@@ -111,14 +111,17 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
-     self.view.backgroundColor = [UIColor brownColor];
-     
+     self.automaticallyAdjustsScrollViewInsets=NO;
+
      [self callGetCountryDetailsAPI];
  }
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
     
+    [self.view
+     setBackgroundColor:[UIUtils colorFromHexColor:WHITE_HEX_FFFFFF]];
+
     [self.navigationController
      setNavigationBarHidden:NO animated:YES];
 }
@@ -147,15 +150,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"Cell";
+    static NSString *identifier = @"ContryDetailCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier
+    ContryDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier
                                                             forIndexPath:indexPath];
     
-    CountryDetailModel *countryDetailModel = self.countryDetailsArray[indexPath.row];
-    
-    cell.textLabel.text = countryDetailModel.countryDescription;
-    cell.detailTextLabel.text = countryDetailModel.countryDescription;
+    [cell resetUIandPrepareForReuse];
+    [cell setUpUIwithModel:self.countryDetailsArray[indexPath.row]];
     
     return cell;
 }
