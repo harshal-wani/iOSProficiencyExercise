@@ -27,6 +27,7 @@
 		A5948AD93F8B93465F9CF0AD /* libPods-iOSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB649B47BAD895A33B6EC89 /* libPods-iOSProject.a */; };
 		F8DFE0CE1D396534002B039C /* ContryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DFE0CD1D396534002B039C /* ContryDetailCell.m */; settings = {ASSET_TAGS = (); }; };
 		F8DFE0D11D3965A7002B039C /* AbstractCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DFE0D01D3965A7002B039C /* AbstractCell.m */; settings = {ASSET_TAGS = (); }; };
+		F8DFE0D41D397A9F002B039C /* CommonMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DFE0D31D397A9F002B039C /* CommonMethodHelper.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		F8DFE0CD1D396534002B039C /* ContryDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContryDetailCell.m; sourceTree = "<group>"; };
 		F8DFE0CF1D3965A7002B039C /* AbstractCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractCell.h; sourceTree = "<group>"; };
 		F8DFE0D01D3965A7002B039C /* AbstractCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractCell.m; sourceTree = "<group>"; };
+		F8DFE0D21D397A9F002B039C /* CommonMethodHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethodHelper.h; sourceTree = "<group>"; };
+		F8DFE0D31D397A9F002B039C /* CommonMethodHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethodHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +324,8 @@
 		5FA448BB1D389F9100510BDB /* CommonMethodHelper */ = {
 			isa = PBXGroup;
 			children = (
+				F8DFE0D21D397A9F002B039C /* CommonMethodHelper.h */,
+				F8DFE0D31D397A9F002B039C /* CommonMethodHelper.m */,
 			);
 			path = CommonMethodHelper;
 			sourceTree = "<group>";
@@ -649,6 +654,7 @@
 				5FA448F11D38E48F00510BDB /* CountryDetailsViewController.m in Sources */,
 				5FA448E81D38C46F00510BDB /* StringValidateUtils.m in Sources */,
 				5FA448DF1D38B99400510BDB /* NetworkUtils.m in Sources */,
+				F8DFE0D41D397A9F002B039C /* CommonMethodHelper.m in Sources */,
 				5FA448DC1D38B8A700510BDB /* MBProgressHUD.m in Sources */,
 				5FA448E31D38BB7600510BDB /* UIUtils.m in Sources */,
 				5FA448D71D38B6A900510BDB /* AbstractViewController.m in Sources */,

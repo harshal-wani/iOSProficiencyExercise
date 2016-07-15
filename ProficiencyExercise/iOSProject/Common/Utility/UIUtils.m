@@ -25,8 +25,8 @@
         withTitle:(NSString *)title {
     
 
-     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Alert"
-                                                               message:@"body"
+     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
+                                                               message:message
                                                         preferredStyle:UIAlertControllerStyleAlert];
     
     

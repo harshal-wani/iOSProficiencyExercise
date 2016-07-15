@@ -8,6 +8,7 @@
 #import "CountryDetailsProxy.h"
 #import "CountryDetailModel.h"
 #import "ContryDetailCell.h"
+#import "CommonMethodHelper.h"
 
 @interface CountryDetailsViewController()<UITableViewDelegate,UITableViewDataSource>
 
@@ -166,10 +167,16 @@
 
 -(void)callGetCountryDetailsAPI{
     
+
+    [CommonMethodHelper checkNetworkAndShowHudForView:self.view];
+    
     [[CountryDetailsProxy new] getCountryDetailsWithSuccess:^(NSDictionary *responseDict) {
         
         self.countryDetailsArray = responseDict[@"rows"];
+        self.navigationController.topViewController.title = responseDict[@"title"];
         [self.tblCountryDetails reloadData];
+        
+        [CommonMethodHelper hideHudForView:self.view];
         
     } withFailure:^(NSDictionary *responseDict) {
         
