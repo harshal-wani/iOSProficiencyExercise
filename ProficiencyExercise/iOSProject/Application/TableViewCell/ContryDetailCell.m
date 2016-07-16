@@ -45,7 +45,9 @@
          autoSetDimension:ALDimensionHeight
          toSize:PTPX(40)];
         [self.contryImageView
-         autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:5 relation:NSLayoutRelationGreaterThanOrEqual];
+         autoPinEdgeToSuperviewEdge:ALEdgeBottom
+         withInset:5
+         relation:NSLayoutRelationGreaterThanOrEqual];
 
         
         [self.lblTitle
@@ -89,10 +91,6 @@
         [self.lblDescription
          setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh
          forAxis:UILayoutConstraintAxisVertical];
-//        [self.lblDescription
-//         setContentHuggingPriority:UILayoutPriorityDefaultHigh
-//         forAxis:UILayoutConstraintAxisVertical];
-
     }
 }
 - (void)configureUI
