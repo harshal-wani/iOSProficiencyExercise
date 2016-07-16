@@ -44,6 +44,8 @@
         [self.contryImageView
          autoSetDimension:ALDimensionHeight
          toSize:PTPX(40)];
+        [self.contryImageView
+         autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:5 relation:NSLayoutRelationGreaterThanOrEqual];
 
         
         [self.lblTitle
@@ -87,9 +89,9 @@
         [self.lblDescription
          setContentCompressionResistancePriority:UILayoutPriorityDefaultHigh
          forAxis:UILayoutConstraintAxisVertical];
-        [self.lblDescription
-         setContentHuggingPriority:UILayoutPriorityDefaultHigh
-         forAxis:UILayoutConstraintAxisVertical];
+//        [self.lblDescription
+//         setContentHuggingPriority:UILayoutPriorityDefaultHigh
+//         forAxis:UILayoutConstraintAxisVertical];
 
     }
 }
@@ -113,7 +115,7 @@
 {
     if (!_contryImageView)
     {
-        _contryImageView = [UIUtils createImageView:@"user_placeholder"];
+        _contryImageView = [UIUtils createImageView:@"country_placeholder"];
     }
     return _contryImageView;
 }
@@ -157,7 +159,7 @@
     {
         [self.contryImageView
          sd_setImageWithURL:[NSURL URLWithString:countryDetailModel.imageHref]
-         placeholderImage:[UIImage imageNamed:@"user_placeholder"]];
+         placeholderImage:[UIImage imageNamed:@"country_placeholder"]];
     }
 
 }
@@ -166,6 +168,6 @@
     self.lblTitle.text = @"";
     self.lblDescription.text = @"";
     [self.contryImageView
-     setImage:[UIImage imageNamed:@"user_placeholder"]];
+     setImage:[UIImage imageNamed:@"country_placeholder"]];
 }
 @end

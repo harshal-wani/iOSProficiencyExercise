@@ -27,9 +27,7 @@ static NSString *const kCOUNTRY_DETAILS_API_NAME = @"countryDetails";
 - (void)successWithRequest:(AFHTTPRequestOperation *)operation
                withRespose:(id)responseObject
            withRequestName:(NSString *)requestName
-{
-    DebugLog(@"response: %@", operation.responseString);
-    
+{    
     NSDictionary *returnDictionary = nil;
     
     if (operation.responseString != nil)
