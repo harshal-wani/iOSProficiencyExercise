@@ -15,7 +15,7 @@ Earliest tested and supported build and deployment target - iOS 7.0. Latest test
 
 #Installation
 
-Just clone/Download project on MAC. No need to run Pod.
+Just clone/Download project on MAC. No need to run Pod install to avoid any conflicts. This is for just testign, on live environment all pods will be added in .gitignore. So developer need to run pod install.
 
 #License
 
